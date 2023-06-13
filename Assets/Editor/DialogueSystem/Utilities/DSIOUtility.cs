@@ -255,9 +255,9 @@ namespace DS.Utilities
 
         private static void UpdateOldUngroupedNodes(List<string> currentUngroupedNodeNames, DSGraphSaveDataSO graphData)
         {
-            if(graphData.OldGroupNames != null && graphData.OldGroupedNodeNames.Count > 0)
+            if(graphData.OldGroupNames != null && graphData.OldUngroupedNodeNames?.Count > 0)
             {
-                List<string> nodesToRemove = graphData.OldUngroupedNames.Except(currentUngroupedNodeNames).ToList();
+                List<string> nodesToRemove = graphData.OldUngroupedNodeNames.Except(currentUngroupedNodeNames).ToList();
 
                 foreach(string nodeToRemove in nodesToRemove)
                 {
@@ -265,7 +265,7 @@ namespace DS.Utilities
                 }
             }
 
-            graphData.OldUngroupedNames = new List<string>(currentUngroupedNodeNames);
+            graphData.OldUngroupedNodeNames = new List<string>(currentUngroupedNodeNames);
         }
         #endregion
 

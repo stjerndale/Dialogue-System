@@ -5,6 +5,7 @@ using UnityEngine;
 namespace DS
 {
     using ScriptableObjects;
+    using System;
 
     public class DSDialogue : MonoBehaviour
     {
@@ -21,6 +22,28 @@ namespace DS
         [SerializeField] private int selectedDialogueGroupIndex;
         [SerializeField] private int selectedDialogueIndex;
 
+        DSDialogueSO currentDialogue;
+
+        private void Awake()
+        {
+            currentDialogue = dialogue;
+            Debug.Log(dialogue.Text);
+        }
+
+        private void Update()
+        {
+            if(Input.GetKeyUp(KeyCode.Space))
+            {
+                NextDialogue();
+            }
+        }
+
+        private void NextDialogue()
+        {
+            currentDialogue = currentDialogue.Choices[0].NextDialogue;
+
+            Debug.Log(currentDialogue.Text);
+        }
     }
 
 }

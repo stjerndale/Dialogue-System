@@ -15,12 +15,11 @@ MonoBehaviour:
   <FileName>k__BackingField: DialogueFileName
   <DialogueGroups>k__BackingField:
     list:
-    - Key: {fileID: 11400000, guid: 120d1110e87e9374ebff9bbe74d36215, type: 2}
+    - Key: {fileID: 11400000, guid: 685ebcf64c4f18749899d04e9b00a2b7, type: 2}
       Value:
-      - {fileID: 11400000, guid: b705df8d450ba71459bb7a0238a38a16, type: 2}
-      - {fileID: 11400000, guid: c1ab71894fdc1404b8b42c23fbd9e575, type: 2}
-    - Key: {fileID: 11400000, guid: e4cff99f1e1a1b046938644ecdcadcf3, type: 2}
-      Value:
-      - {fileID: 11400000, guid: 773d0b6e0ac45cd4a98ffdb41e83bb06, type: 2}
-  <UngroupedDialogues>k__BackingField:
-  - {fileID: 11400000, guid: a08c64570f5235d4f93954e14717c0fe, type: 2}
+      - {fileID: 11400000, guid: 97484d6316db58140b4ebcf213abe3b5, type: 2}
+      - {fileID: 11400000, guid: 573c486a088f4b64a8d6890b7d2ef430, type: 2}
+      - {fileID: 11400000, guid: be2325af3a43d9f4bb2e86af517ea0a4, type: 2}
+      - {fileID: 11400000, guid: 88fb33833318cf247aac9489cbc620a7, type: 2}
+      - {fileID: 11400000, guid: 54e3be6e970fc834ca5c566872b97a3e, type: 2}
+  <UngroupedDialogues>k__BackingField: []

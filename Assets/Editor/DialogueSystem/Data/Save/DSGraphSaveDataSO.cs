@@ -18,7 +18,7 @@ namespace DS.Data.Save
         public List<string> OldGroupNames { get; set; }
 
         [field: SerializeField]
-        public List<string> OldUngroupedNames { get; set; }
+        public List<string> OldUngroupedNodeNames { get; set; }
 
         [field: SerializeField]
         public SerializableDictionary<string, List<string>> OldGroupedNodeNames { get; set; }
